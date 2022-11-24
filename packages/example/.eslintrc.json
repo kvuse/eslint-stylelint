@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@kvuse/eslint-config", "./.eslintrc-auto-import.json"]
+}
