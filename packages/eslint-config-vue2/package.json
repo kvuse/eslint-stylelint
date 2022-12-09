@@ -1,0 +1,24 @@
+{
+  "name": "@kvuse/eslint-config-vue2",
+  "version": "1.0.0",
+  "description": "vite项目vue的eslint配置",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "vuecli",
+    "vue",
+    "eslint",
+    "config"
+  ],
+  "author": "wenxin",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.11.1",
+    "jsonc-eslint-parser": "^2.1.0"
+  }
+}
