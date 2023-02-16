@@ -10,7 +10,6 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     'airbnb-base',
   ],
-  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',

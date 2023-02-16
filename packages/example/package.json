@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kvuse/eslint-config": "workspace:^1.0.0",
+    "@kvuse/eslint-config": "workspace:*",
     "@kvuse/stylelint-config": "workspace:*",
     "stylelint": "^14.15.0",
     "vue": "^3.2.41"
