@@ -1,9 +1,12 @@
 {
   "name": "@kvuse/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "stylelint配置",
   "main": "index.js",
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvuse/eslint-stylelint/blob/main/packages/stylelint-config/README.md"
+  },
   "keywords": [
     "sass",
     "scss",

@@ -1,6 +1,6 @@
 {
   "name": "@kvuse/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "vite项目vue的eslint配置",
   "main": "index.js",
   "scripts": {},
@@ -12,6 +12,10 @@
   ],
   "author": "wenxin",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvuse/eslint-stylelint/blob/main/packages/eslint-config/README.md"
+  },
   "dependencies": {
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
