@@ -18,7 +18,7 @@ pnpm add @kvuse/commitlint-config @commitlint/cli -D
 
 ## 使用
 
-1. 使用命令添加配置文件
+使用命令添加配置文件
 
 ```js
 cd node_modules/@kvuse/commitlint-config
@@ -26,23 +26,14 @@ cd node_modules/@kvuse/commitlint-config
 pnpm run preinstall
 ```
 
-2. 手动添加
-  
-根目录添加`.commitlintrc.json`
-
-```json
-{
-  "extends": ["@kvuse/commitlint-config"]
-}
-```
-
-`.husky`中添加`commit-msg`
+> 执行命令成功提示
 
 ```js
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+> @kvuse/commitlint-config@1.1.0 preinstall /Users/liukai/Documents/work/husky-demo/node_modules/.pnpm/@kvuse+commitlint-config@1.1.0/node_modules/@kvuse/commitlint-config
+> node prepare
 
-npx --no -- commitlint --edit "$1"
+添加.commitlintrc.json成功
+添加.husky成功
 ```
 
 ## 添加提交`eslint`验证
@@ -87,3 +78,22 @@ git commit -m 'Feat更'
 
 husky - commit-msg hook exited with code 1 (error)
 ```
+
+## 规则
+
+```js
+[
+  'feat', // 新功能（feature）
+  'fix', // 修补bug
+  'docs', // 文档（documentation）
+  'style', // 格式（不影响代码运行的变动）
+  'refactor', // 重构
+  'test', // 增加测试
+  'revert', // 回滚
+  'config', // 构建过程或辅助工具的变动
+  'chore', // 其他改动
+],
+```
+
+- 开头必须有上述字段，例如：`feat: 添加xx功能`
+- 提交内容不能小于三个字符
