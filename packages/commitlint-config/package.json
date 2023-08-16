@@ -1,0 +1,20 @@
+{
+  "name": "@kvuse/commitlint-config",
+  "version": "1.0.36",
+  "description": "代码提交验证",
+  "main": "index.js",
+  "author": "wenxin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvuse/eslint-stylelint/blob/main/packages/commitlint-config/README.md"
+  },
+  "scripts": {
+    "preinstall": "node prepare"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3"
+  }
+}
