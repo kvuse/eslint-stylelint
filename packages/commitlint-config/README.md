@@ -1,10 +1,8 @@
-# commitlint-config
-
-## 提交验证
+# commitlint-config 提交验证
 
 ## 安装
 
-- 如果根目录没有`package.json` ，先添加，如果请跳过
+- 如果根目录没有`package.json` ，先添加，如果有请跳过该步骤
   
 ```js
 pnpm init
@@ -29,7 +27,7 @@ pnpm run preinstall
 > 执行命令成功提示
 
 ```js
-> @kvuse/commitlint-config@1.1.0 preinstall /Users/liukai/Documents/work/husky-demo/node_modules/.pnpm/@kvuse+commitlint-config@1.1.0/node_modules/@kvuse/commitlint-config
+> @kvuse/commitlint-config@1.1.0 preinstall
 > node prepare
 
 添加.commitlintrc.json成功
@@ -86,14 +84,15 @@ husky - commit-msg hook exited with code 1 (error)
   'feat', // 新功能（feature）
   'fix', // 修补bug
   'docs', // 文档（documentation）
-  'style', // 格式（不影响代码运行的变动）
+  'style', // 格式
   'refactor', // 重构
   'test', // 增加测试
   'revert', // 回滚
   'config', // 构建过程或辅助工具的变动
   'chore', // 其他改动
+  'debug', // 调试
 ],
 ```
 
-- 开头必须有上述字段，例如：`feat: 添加xx功能`
+- 开头必须有上述字段，例如：`feat: 添加xx功能`(字段: 冒号后要加空格)
 - 提交内容不能小于三个字符
