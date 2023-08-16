@@ -75,7 +75,7 @@ git add .
 git commit -m 'Feat更'
 ```
 
-如果出现一下报错就成功了
+如果出现以下报错就成功了
 
 ```js
 ⧗   input: Feat更
