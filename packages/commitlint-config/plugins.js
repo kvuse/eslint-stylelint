@@ -17,7 +17,7 @@ module.exports = [
       // },
       'subject-no-number-sequence': (parsed, when) => {
         const subject = parsed.header;
-        const regex = /^\s*([A-Za-z0-9]{3,})+$/;
+        const regex = /^\s*([A-Za-z0-9])+$/;
         const hasNumberSequence = !regex.test(subject);
 
         return [
