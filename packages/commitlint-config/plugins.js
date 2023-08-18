@@ -19,7 +19,7 @@ module.exports = [
         const { subject = '' } = parsed;
         console.log('subject: ', subject);
         return [
-          when && subject.length <= 3,
+          when && subject.length >= 3,
           'subject must not be shorter than 3 characters: 提交内容不能小于3个字符',
         ];
       },
