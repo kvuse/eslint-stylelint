@@ -94,5 +94,7 @@ husky - commit-msg hook exited with code 1 (error)
 ],
 ```
 
+- 提交类型不能为空，必须包含： `[feat, fix, docs, style, refactor, test, revert, config, chore, debug]`
 - 开头必须有上述字段，例如：`feat: 添加xx功能`(字段: 冒号后要加空格)
 - 提交内容不能小于三个字符
+- 不能连续的字符或者数字

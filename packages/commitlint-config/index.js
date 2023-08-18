@@ -23,7 +23,7 @@ module.exports = {
     'subject-empty': [2, 'never'], // 提交不符合规范时,也可以提交,但是会有警告
     // 'subject-full-stop': [0, 'never'],
     'subject-min-length': [2, 'always', 3], // 至少3个字符
-    'subject-no-number-sequence': [2, 'never'], // 禁止使用连续数字
+    'subject-no-number-sequence': [2, 'never'], // 禁止使用连续数字或字母
   },
   plugins,
 };
