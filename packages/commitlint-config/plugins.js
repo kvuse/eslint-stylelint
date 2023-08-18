@@ -8,13 +8,13 @@ module.exports = [
           'type may not be empty: 提交类型不能为空',
         ];
       },
-      'subject-empty': (parsed, when) => {
-        const { type } = parsed;
-        return [
-          when && type,
-          'subject may not be empty: 提交内容不能为空',
-        ];
-      },
+      // 'subject-empty': (parsed, when) => {
+      //   const { type } = parsed;
+      //   return [
+      //     when && type,
+      //     'subject may not be empty: 提交内容不能为空',
+      //   ];
+      // },
       'subject-no-number-sequence': (parsed, when) => {
         const subject = parsed.header;
         const regex = /^\s*([A-Za-z0-9]{3,})+$/;
