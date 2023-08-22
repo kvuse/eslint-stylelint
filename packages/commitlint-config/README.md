@@ -98,3 +98,22 @@ husky - commit-msg hook exited with code 1 (error)
 - 开头必须有上述字段，例如：`feat: 添加xx功能`(字段: 冒号后要加空格)
 - 提交内容不能小于三个字符
 - 不能连续的字符或者数字
+
+## 问题
+
+如果提交出现`command not found`
+
+```js
+.husky/commit-msg: line 4: npx: command not found
+```
+
+需要配置环境变量
+
+这里用`nvs`举例
+
+```js
+export NVS_HOME="$HOME/.nvs"
+[ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"  # 这里是判断 nvs.sh 文件是否存在并执行
+```
+
+**如果不行，请重启vscode或者重启电脑使环境变量生效**
