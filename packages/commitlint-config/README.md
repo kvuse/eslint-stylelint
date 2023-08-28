@@ -1,6 +1,6 @@
 # commitlint-config 提交验证
 
-## 安装
+## 安装使用
 
 - 如果根目录没有`package.json` ，先添加，如果有请跳过该步骤
   
@@ -14,12 +14,14 @@ pnpm init
 pnpm add @kvuse/commitlint-config @commitlint/cli -D
 ```
 
-## 使用
+- 使用
+  
+> **⚠️ 仅第一次安装需要，如果已安装请跳过**
 
 使用命令添加配置文件
 
 ```js
-cd node_modules/@kvuse/commitlint-config
+cd node_modules/@gt/commitlint-config
 
 pnpm run preinstall
 ```
