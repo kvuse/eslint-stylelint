@@ -43,10 +43,10 @@ exec(command, async (error, stdout, stderr) => {
         console.error('添加.husky成功');
       }
     });
-    // 执行钩子
-    exec(`cd ${currentDir} &&  npm pkg set scripts.prepare="cd node_modules/@kvuse/commitlint-config && npm run preinstall"`, (err) => {
+    // 添加postinstall命令
+    exec(`cd ${currentDir} && npm pkg set scripts.postinstall="cd node_modules/@kvuse/commitlint-config && npm run preinstall"`, (err) => {
       if (err) {
-        console.error('添加scripts失败，请在package.json添加prepare命令');
+        console.error('添加scripts失败，请在package.json添加postinstall命令');
       } else {
         console.error('添加scripts成功');
       }
