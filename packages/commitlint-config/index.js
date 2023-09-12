@@ -18,6 +18,7 @@ module.exports = {
         'chore', // 其他改动
         'debug', // 调试
         'build', // 打包
+        'release', // 发布
       ],
     ],
     'type-empty': [2, 'never'], // 提交不符合规范时,也可以提交,但是会有警告
