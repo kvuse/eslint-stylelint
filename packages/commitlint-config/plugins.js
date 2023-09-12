@@ -1,4 +1,4 @@
-const typeEnum = ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'revert', 'config', 'chore', 'debug'];
+const typeEnum = ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'revert', 'config', 'chore', 'debug', 'build'];
 function hasTypeEnum(parsed) {
   const { type, header } = parsed;
   const finalType = type || header?.split(': ')[0];
@@ -19,8 +19,8 @@ module.exports = [
       'type-empty': (parsed, when) => {
         const { type, header } = parsed;
         const finalType = type || header?.split(': ')[0];
-        if (hasSpace(parsed)) console.log('[feat、fix、docs、style、refactor、test、revert、config、chore、debug] 冒号后要加空格');
-        if (!hasTypeEnum(parsed)) console.log('提交类型必须是[feat、fix、docs、style、refactor、test、revert、config、chore、debug]之一');
+        if (hasSpace(parsed)) console.log(`[${typeEnum}]冒号后要加空格`);
+        if (!hasTypeEnum(parsed)) console.log(`提交类型必须是[${typeEnum}]之一`);
         if (!finalType) console.log('提交类型不能为空');
         return [
           when && type,

@@ -85,14 +85,16 @@ husky - commit-msg hook exited with code 1 (error)
 [
   'feat', // 新功能（feature）
   'fix', // 修补bug
-  'docs', // 文档（documentation）
+  'docs', // 文档
   'style', // 格式
   'refactor', // 重构
   'test', // 增加测试
   'revert', // 回滚
-  'config', // 构建过程或辅助工具的变动
+  'config', // 配置
   'chore', // 其他改动
   'debug', // 调试
+  'build', // 打包构建
+  'release', // 发布
 ],
 ```
 
