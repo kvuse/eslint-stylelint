@@ -29,9 +29,6 @@ pnpm run preinstall
 > 执行命令成功提示
 
 ```js
-> @kvuse/commitlint-config@1.1.0 preinstall
-> node prepare
-
 添加.commitlintrc.json成功
 添加.husky成功
 ```

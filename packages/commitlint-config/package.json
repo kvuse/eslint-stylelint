@@ -1,6 +1,6 @@
 {
   "name": "@kvuse/commitlint-config",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "代码提交验证",
   "main": "index.js",
   "author": "wenxin",

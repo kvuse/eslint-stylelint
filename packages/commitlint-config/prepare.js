@@ -48,14 +48,6 @@ exec(command, async (error) => {
         chalklog.success('添加.husky成功');
       }
     });
-    // 添加postinstall命令
-    exec(`cd ${currentDir} && npm pkg set scripts.postinstall="cd node_modules/@kvuse/commitlint-config && npm run preinstall"`, (err) => {
-      if (err) {
-        chalklog.error('添加scripts失败，请在package.json添加prepare命令');
-      } else {
-        chalklog.success('添加scripts成功');
-      }
-    });
   }
 
   copyFiles({
