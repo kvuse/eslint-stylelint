@@ -1,6 +1,6 @@
 {
   "name": "@kvuse/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "vite项目vue的eslint配置",
   "main": "index.js",
   "scripts": {},
@@ -17,10 +17,10 @@
     "url": "https://github.com/kvuse/eslint-stylelint/blob/main/packages/eslint-config/README.md"
   },
   "dependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-vue": "^9.7.0",
-    "jsonc-eslint-parser": "^2.1.0"
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "jsonc-eslint-parser": "^2.4.0"
   }
 }

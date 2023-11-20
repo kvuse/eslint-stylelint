@@ -6,17 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules **/*/node_modules"
   },
   "dependencies": {
     "@kvuse/eslint-config": "workspace:*",
     "@kvuse/stylelint-config": "workspace:*",
-    "stylelint": "^14.15.0",
-    "vue": "^3.2.41"
+    "stylelint": "^15.11.0",
+    "vue": "^3.3.8"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.2.0",
-    "unplugin-auto-import": "^0.11.5",
-    "vite": "^3.2.3"
+    "@vitejs/plugin-vue": "^4.5.0",
+    "unplugin-auto-import": "^0.16.7",
+    "vite": "^5.0.0"
   }
 }
