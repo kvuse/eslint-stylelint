@@ -41,10 +41,12 @@ pnpm add @kvuse/stylelint-config -D
 
 > 如果出现没有效果, 没有stylelint验证
 
+**⚠️ 安装15版本以下**
+
 - 安装`stylelint`
   
   ```js
-   pnpm install stylelint -D
+   pnpm install stylelint@^15.11.0 -D
   ```
 
 ## 添加其他规则  
